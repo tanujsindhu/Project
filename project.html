@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Smart Home</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#lights">Lights</a></li>
+            <li><a href="#temperature">Temperature</a></li>
+            <li><a href="#camera">Camera</a></li>
+            <li><a href="#weather">Weather</a></li>
+            <li><a href="#fan">Fan</a></li>
+            <li><a href="#alarm">Alarm</a></li>
+            <li><a href="#watering">Watering</a></li>
+            <li><a href="#fridge">Fridge</a></li>
+            <li><a href="#energy">Energy Usage</a></li>
+            <li><a href="#voice-assistant">Voice Assistant</a></li>
+            <li><a href="#door-lock">Door Lock</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard">
+        <header>
+            <h1>Smart Home Dashboard</h1>
+        </header>
+
+        <div class="controls">
+            <!-- Lights Control -->
+            <section id="lights" class="light-control">
+                <h2>Lights</h2>
+                <button id="toggle-light" class="control-btn">Turn On</button>
+            </section>
+
+            <!-- Temperature Control -->
+            <section id="temperature" class="temperature-control">
+                <h2>Temperature</h2>
+                <div id="temperature" class="temp-display">22°C</div>
+                <button id="increase-temp" class="control-btn">Increase</button>
+                <button id="decrease-temp" class="control-btn">Decrease</button>
+            </section>
+
+            <!-- Security Camera -->
+            <section id="camera" class="security-camera">
+                <h2>Security Camera</h2>
+                <div class="camera-feed">
+                    <img src="https://via.placeholder.com/300" alt="Camera Feed">
+                </div>
+                <button id="toggle-camera" class="control-btn">Toggle Camera</button>
+            </section>
+        </div>
+
+        <div class="controls">
+            <!-- Weather Widget -->
+            <section class="weather-widget">
+                <h2>Weather Widget</h2>
+                <div class="weather-info" id="weather-info">
+                    Temp: 22°C, Condition: Clear
+                </div>
+                <button id="refresh-weather" class="refresh-button">Refresh</button>
+            </section>
+
+            <!-- Fan Control -->
+            <section id="fan" class="fan-control">
+                <h2>Fan Control</h2>
+                <button id="fan-speed" class="control-btn">Set Fan Speed</button>
+            </section>
+
+            <!-- Alarm System -->
+            <section id="alarm" class="alarm-system">
+                <h2>Alarm System</h2>
+                <button id="toggle-alarm" class="control-btn">Activate Alarm</button>
+            </section>
+
+            <!-- Watering System -->
+            <section id="watering" class="watering-system">
+                <h2>Watering System</h2>
+                <button id="toggle-watering" class="control-btn">Start Watering</button>
+            </section>
+
+            <!-- Smart Fridge -->
+            <section id="fridge" class="smart-fridge">
+                <h2>Smart Fridge</h2>
+                <ul id="fridge-items">
+                    <li>Milk</li>
+                    <li>Eggs</li>
+                    <li>Butter</li>
+                </ul>
+                <button id="add-item" class="control-btn">Add Item</button>
+                <button id="remove-item" class="control-btn">Remove Item</button>
+            </section>
+        </div>
+
+        <!-- Energy Usage -->
+        <section id="energy" class="energy-usage">
+            <h2>Energy Usage</h2>
+            <div class="energy-info">Current Consumption: 150 kWh</div>
+            <button id="optimize-energy" class="control-btn">Optimize Energy</button>
+        </section>
+
+        <div class="controls">
+            <!-- Voice Assistant -->
+            <section id="voice-assistant" class="control-section voice-control">
+                <h2>Voice Assistant</h2>
+                <button id="activate-voice" class="control-btn">Activate Voice Control</button>
+                <p>Use voice commands to control lights, fan, temperature, and more.</p>
+            </section>
+
+            <!-- Smart Door Lock -->
+            <section id="door-lock" class="control-section door-lock-control">
+                <h2>Smart Door Lock</h2>
+                <button id="lock-door" class="control-btn">Lock Door</button>
+                <button id="unlock-door" class="control-btn">Unlock Door</button>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Tanuj Sindhu <br>
+            <a href="mailto:sindhutanuj@gmail.com">sindhutanuj@gmail.com</a><br>
+            96549***** <br>
+            LPU, Phagwara <br>
+            &copy; 2024 Smart Home Inc.
+        </p>
+    </footer>
+
+    <!-- External JS File -->
+    <script src="script.js"></script>
+</body>
+</html>
